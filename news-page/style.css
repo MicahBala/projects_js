@@ -37,7 +37,8 @@ header {
   /* border: solid 1px red; */
 }
 
-.newsItem {
+.newsItem,
+.success {
   width: 100%;
   background-color: rgb(255, 254, 254);
   padding: 1em;
@@ -87,4 +88,9 @@ header {
 
 .show {
   display: block;
+}
+
+.success {
+  color: green;
+  background-color: rgb(210, 241, 210);
 }

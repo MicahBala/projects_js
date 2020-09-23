@@ -147,10 +147,21 @@ const createFormElement = () => {
 
     // Create a link element to hold the new item on the page
     newLink = createLinkElement(newLink);
+
     // Replace the form with the new element
     newsContent.replaceChild(newLink, e.target);
 
-    // newsContent.removeChild(formElement);
+    // Create and show a success message on the page
+    const messageElement = document.createElement("div");
+    messageElement.setAttribute("class", "success");
+    messageElement.textContent = `New link added SUCCESSFULLY!`;
+    newsContent.insertBefore(messageElement, newLink);
+
+    // Success message disappears after 2 second
+    setTimeout(() => {
+      newsContent.removeChild(messageElement);
+    }, 4000);
+
     formCreated = false;
   });
 
