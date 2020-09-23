@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(230, 240, 239);
+}
+
+header {
+  background-color: rgb(249, 254, 255);
+  padding: 1em;
+  margin: 0.8em 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: rgb(141, 145, 145);
+}
+
+.headerContent {
+  display: flex;
+}
+
+#submitButton {
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#newsContent {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1em 0;
+  /* border: solid 1px red; */
+}
+
+.newsItem {
+  width: 100%;
+  background-color: rgb(255, 254, 254);
+  padding: 1em;
+  margin: 0.8em 0;
+}
+
+.itemHead {
+  font-weight: bold;
+  color: rgb(109, 109, 196);
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.authorName {
+  font-size: small;
+  display: block;
+  padding-top: 0.5em;
+  color: rgb(141, 145, 145);
+}
+
+.inputForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputForm input {
+  width: 25%;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+#addLink {
+  background-color: rgb(132, 132, 197);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
